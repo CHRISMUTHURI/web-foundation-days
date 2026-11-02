@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNotes - User Directory</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="users.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>User Directory</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Workspace</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="index.html">Users</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="users-section">
+            <h2>Community Users</h2>
+            
+            <div class="controls-and-counts">
+                <button id="load-users" type="button">Load Users</button>
+                
+                <div class="filter-container">
+                    <label for="filter-input">Filter by Name:</label>
+                    <input type="text" id="filter-input" placeholder="Type a name...">
+                </div>
+            </div>
+
+            <p id="status" aria-live="polite"></p>
+
+            <ul id="users-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 QuickNotes. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
